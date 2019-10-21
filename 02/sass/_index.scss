@@ -10,19 +10,33 @@ h1{
   p{
     color: white;
   }
+  
 }
-.img--hover{
+.text--hover{
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 15px;
-  left: 15px;
+  right: 0px;
+  left: 0px;
   padding:0 15px;
   opacity:0;
-  
+  background-color: rgba(0,0,0,0.5);
+  transition: opacity .4s ;
+  p::before{
+    content:"";
+    // float: right;
+    // 從右至左，但是會遇到排版問題
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: hotpink;
+    transition:width 0.3s 0.3s ;
+    // transition : 要改變的屬性 改變完成總時間 幾秒後改變
+  }
 }
-.img--hover:hover{
+.text--hover:hover{
   opacity:1;
-  background-color: rgba(0,0,0,0.5); 
-  
+  p::before{
+    width: 100%;
+  }
 }

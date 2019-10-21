@@ -27,18 +27,34 @@ h1 {
   color: white;
 }
 
-.img--hover {
+.text--hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 15px;
-  left: 15px;
+  right: 0px;
+  left: 0px;
   padding: 0 15px;
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
 }
 
-.img--hover:hover {
+.text--hover p::before {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: hotpink;
+  -webkit-transition: width 0.3s 0.3s;
+  transition: width 0.3s 0.3s;
+}
+
+.text--hover:hover {
   opacity: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text--hover:hover p::before {
+  width: 100%;
 }
 /*# sourceMappingURL=all.css.map */
