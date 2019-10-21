@@ -13,6 +13,7 @@ h1{
   
 }
 .text--hover{
+  width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -24,19 +25,22 @@ h1{
   transition: opacity .4s ;
   p::before{
     content:"";
-    // float: right;
-    // 從右至左，但是會遇到排版問題
     display: block;
+    //改變方向
+    position: absolute;
+    right:10px;
+    //
     width: 0%;
     height: 2px;
     background-color: hotpink;
     transition:width 0.3s 0.3s ;
     // transition : 要改變的屬性 改變完成總時間 幾秒後改變
   }
+  
 }
 .text--hover:hover{
   opacity:1;
   p::before{
-    width: 100%;
+    width: 95%;
   }
 }

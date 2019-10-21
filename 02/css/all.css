@@ -28,6 +28,7 @@ h1 {
 }
 
 .text--hover {
+  width: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -43,6 +44,8 @@ h1 {
 .text--hover p::before {
   content: "";
   display: block;
+  position: absolute;
+  right: 10px;
   width: 0%;
   height: 2px;
   background-color: hotpink;
@@ -55,6 +58,6 @@ h1 {
 }
 
 .text--hover:hover p::before {
-  width: 100%;
+  width: 95%;
 }
 /*# sourceMappingURL=all.css.map */
