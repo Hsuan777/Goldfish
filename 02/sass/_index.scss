@@ -1,3 +1,28 @@
 h1{
   color: hotpink;
 }
+
+.col-md-3{
+  position: relative;
+  h2{
+    color: gold;
+  }
+  p{
+    color: white;
+  }
+}
+.img--hover{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  left: 15px;
+  padding:0 15px;
+  opacity:0;
+  
+}
+.img--hover:hover{
+  opacity:1;
+  background-color: rgba(0,0,0,0.5); 
+  
+}
