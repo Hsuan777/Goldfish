@@ -1,5 +1,5 @@
 h1{
-  color: green;
+  color:#FEB85D ;
 }
 .col-md-3{
   max-width: 282px;
@@ -7,6 +7,14 @@ h1{
   transition:transform 0.5s;
   &:hover{
     transform: translateY(-25px) ;
+    .txt{
+      color: white;
+      background-image: -webkit-linear-gradient(90deg,#FB8076,#FEB85D, );
+      &::before{
+        border-right: 140px solid #FEB85D;
+        border-left:140px  solid #FEB85D;
+      }
+    }
   }
   .txt{
     position: relative;
@@ -25,12 +33,7 @@ h1{
     h2{
       border-bottom:1px solid cornflowerblue;
     }
-
   }
-  
-    
-    
-    
 }
   
   

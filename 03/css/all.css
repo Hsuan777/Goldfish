@@ -13,7 +13,7 @@ footer {
 }
 
 h1 {
-  color: green;
+  color: #FEB85D;
 }
 
 .col-md-3 {
@@ -28,6 +28,16 @@ h1 {
 .col-md-3:hover {
   -webkit-transform: translateY(-25px);
           transform: translateY(-25px);
+}
+
+.col-md-3:hover .txt {
+  color: white;
+  background-image: -webkit-linear-gradient(90deg, #FB8076, #FEB85D);
+}
+
+.col-md-3:hover .txt::before {
+  border-right: 140px solid #FEB85D;
+  border-left: 140px  solid #FEB85D;
 }
 
 .col-md-3 .txt {
