@@ -1,0 +1,39 @@
+html {
+  font-family: serif, sans-serif, "Microsoft JhengHei";
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  background-color: black;
+}
+
+footer {
+  color: olivedrab;
+}
+
+h1 {
+  color: #FEB85D;
+}
+
+.col-12 {
+  position: relative;
+}
+
+.txt {
+  width: 50%;
+  height: 50%;
+}
+
+.txt__1 {
+  background-color: rgba(254, 201, 121, 0.8);
+}
+
+.txt__2 {
+  background-color: rgba(240, 174, 193, 0.8);
+}
+
+.txt__3 {
+  background-color: rgba(149, 219, 214, 0.8);
+}
+/*# sourceMappingURL=all.css.map */
