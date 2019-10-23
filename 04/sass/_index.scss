@@ -3,19 +3,80 @@ h1{
 }
 .col-12{
   position: relative;
+  &:hover{
+    img{
+      transform: translate(20px, -20px);
+    }
+    img[src*="random=21"]{
+      transform: translate(-20px, -20px);
+    }
+    @include iPad{
+      img{
+        transform: translate(0px, 0px);
+      }
+      img[src*="random=21"]{
+        transform: translate(0px, 0px);
+      }
+    }
+    .txt{
+      transform: translate(-30px, -20px);
+    }
+    .txt__2{
+      transform: translate(30px, -20px);
+    }
+
+  }
+  img{
+    transition:transform 0.5s;
+  }
+  .txt{
+    width: 50%;
+    height: 50%;
+    transition:transform 0.5s;
+  }
+  .txt__1{
+    position: absolute;
+    right: 0px;
+    background-color: rgba(254, 201, 121, 0.8);
+    
+    @include iPad{
+      width: 75%;
+      bottom: 5%;
+      right: 5%; 
+      padding-top:1em;  
+      h2{
+        font-size: 24px;
+      }  
+    }
+  }
+  .txt__2{
+    position: absolute;
+    left: 0px;
+    background-color: rgba(240, 174, 193, 0.8);
+    @include iPad{
+      width: 75%;
+      bottom: 5%;
+      left: 5%; 
+      padding-top:1em;
+      h2{
+        font-size: 24px;
+      }    
+    }
+  }
+  .txt__3{
+    position: absolute;
+    right: 0px;
+    background-color: rgba(149, 219, 214, .8);
+    @include iPad{
+      width: 75%;
+      bottom: 5%;
+      right: 5%;   
+      padding-top:1em;  
+      h2{
+        font-size: 24px;
+      }
+    }
+  }
 }
-.txt{
-  width: 50%;
-  height: 50%;
-}
-.txt__1{
-  background-color: rgba(254, 201, 121, 0.8);
-}
-.txt__2{
-  background-color: rgba(240, 174, 193, 0.8);
-}
-.txt__3{
-  background-color: rgba(149, 219, 214, .8);
-}
-  
+
   
