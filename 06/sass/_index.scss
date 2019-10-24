@@ -1,0 +1,13 @@
+main{
+  min-height: 50vh;
+}
+footer h4{
+    border-bottom: 1px dotted white;
+    line-height: 2;
+}
+a.nav-link{
+  color: white;
+  &:hover{
+      color: orange;
+  }
+}
