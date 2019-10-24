@@ -1,11 +1,17 @@
 body {
   font-size: 16px;
   color: black;
-  background-color: black;
+  background-color: white;
+  background-image: linear-gradient(-30deg, #fdaecb, #e7597f, #fe8556);
   font-family: "Noto Sans TC", sans-serif;
 }
 
-h1 {
-  color: goldenrod;
+.wrap {
+  height: 90vh;
+}
+
+.txt--shadow {
+  -webkit-box-shadow: 0 10px 30px rgba(160, 0, 0, 0.5);
+          box-shadow: 0 10px 30px rgba(160, 0, 0, 0.5);
 }
 /*# sourceMappingURL=all.css.map */

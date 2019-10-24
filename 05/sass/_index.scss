@@ -1,3 +1,8 @@
-h1{
-  color: goldenrod;
+.wrap{
+  height: 90vh;
 }
+//陰影隨著背景顏色更改，不需要都用黑底呈現
+.txt--shadow{
+  box-shadow: 0 10px 30px rgba(160,0,0,.5);
+}
+
