@@ -27,9 +27,17 @@ p {
 }
 
 .banner2 {
-  background-image: linear-gradient(-120deg, #7bf 50%, transparent 50%), url("https://picsum.photos/1200/600?random=10");
+  background-image: linear-gradient(-120deg, #7bf 50%, transparent 50%), url("https://picsum.photos/1200/600?random=11");
   background-size: 100% 100%, auto 100%;
   background-position: center center, left center;
   height: 60vh;
+}
+
+.banner3 {
+  height: 100vh;
+  background-image: url("https://picsum.photos/600/600?random=11"), url("https://picsum.photos/600/600?random=12"), url("https://picsum.photos/600/600?random=13"), url("https://picsum.photos/400/400?random=14");
+  background-size: auto 50%,auto 50%, auto 50%, auto 50%;
+  background-position: center top , center bottom , center left 100px , center right 100px;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=all.css.map */
