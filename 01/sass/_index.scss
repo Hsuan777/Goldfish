@@ -1,17 +1,27 @@
-.banner{
-  background:   linear-gradient(115deg, #7bf 50%, transparent 50%) center center / 100% 100%,
-  url("https://picsum.photos/1200/600?random=10") right center / auto 100%;
-  height: 70vh;
-  
-  h1{
-	font-size: 58px;
+h1{
+  font-size: 58px;
 	color: blue;
-  }
-  small{
-	font-size: 42px;
-  }
-  p{
-	font-size: 20px;
-  }
-
 }
+small{
+  font-size: 42px;
+}
+p{
+  font-size: 20px;
+}
+.banner{
+  //多重背景寫法
+  background:   linear-gradient(120deg, #7bf 50%, transparent 50%) center center / 100% 100%,
+  url("https://picsum.photos/1200/600?random=10") right center / auto 100%;
+  height: 60vh;
+}
+
+.banner2{
+  //漸層顏色 (旋轉角度，顏色，顏色)
+  background-image: linear-gradient(-120deg,#7bf 50% , transparent 50%), 
+                    url("https://picsum.photos/1200/600?random=10")  ;
+  background-size: 100% 100%, auto 100%;
+  background-position: center center, left center;
+  height: 60vh;
+}
+ 
+
