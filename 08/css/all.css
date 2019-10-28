@@ -1,0 +1,24 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: black;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.fish__breadcrumb {
+  list-style: none;
+}
+
+.fish__breadcrumb > li + li::before {
+  content: "~";
+  padding: 0 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+
+.breadcrumb > li + li::before {
+  content: "/";
+}
+/*# sourceMappingURL=all.css.map */

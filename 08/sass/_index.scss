@@ -1,0 +1,16 @@
+.fish__breadcrumb{
+  list-style: none;
+}
+.fish__breadcrumb > li +li::before{
+    content:"~";
+    padding:0 10px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    content:">";
+}
+
+//權重問題
+.breadcrumb > li + li::before{
+  content:"/";
+}
