@@ -1,0 +1,95 @@
+body{
+  background: #485563;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+  height: 250vh;
+}
+h1{
+  color:#ffd194;
+}
+.main{
+  .items{
+    border: 10px solid #ffd194;
+    .txt{
+      h3{
+        color: goldenrod;  
+      }
+    }
+    .icon{
+      position: relative;
+      width: 150px;
+      height: 150px;
+      font-size: 70px;
+      color: #ffd194;;
+      margin: -85px auto 0;
+      line-height: 150px;
+      border-radius: 50%;
+    }
+    .icon::before{
+      content:"";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -6px;
+      left: 0;
+      border-top: 10px solid #ffd194;;
+      border-left: 10px solid #ffd194;;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      transform: rotate(45deg);
+      border-radius: 50% ;
+    }
+    &:hover{
+      .fa{
+        animation: fa .3s linear infinite alternate;
+      }
+      .fa-gavel{
+        animation: gavel .3s  infinite alternate;
+      }
+    }
+  }
+}
+@keyframes fa{
+    0%{ transform: rotate(-20deg); }
+  100%{ transform: rotate(20deg); }
+}
+@keyframes gavel{
+    0%{ transform: rotate(-20deg); }
+  100%{ transform: rotate(35deg); }
+}
+
+.car{
+  .item{
+    height: 150px;
+    border: 5px solid #ffd194;
+    background-color: #485563;
+    .icon{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #485563;
+      
+      position: relative;
+    }
+    .icon--left{
+      margin: 115px 0px 0px 0px; 
+    }
+    .icon--right{
+      margin:-50px 0px 0px 350px;  
+    }
+    .icon::before{
+      content:"";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left:0;
+      border-bottom: 5px solid #ffd194;
+      border-right:5px solid #ffd194 ;
+      border-top:5px solid transparent ;
+      border-left:5px solid transparent ;
+      transform: rotate(45deg);
+      border-radius: 50%;
+    }
+  }
+}
