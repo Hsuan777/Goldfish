@@ -1,0 +1,36 @@
+.side{
+  width: 300px;
+  height: 100vh;
+  background-image:linear-gradient(to right, #8a2387, #e94057, #f27121); ;
+  box-shadow: #f27121 ;
+  input{
+    background-color:transparent ;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+  }
+  li{
+    color: white;
+    + li{
+      border-top: 1px solid rgb(201, 201, 201);
+    }
+    a{
+      color: white;
+      display: block;
+      text-decoration: none;
+      transition: 0.3s;
+      .fa{
+        transition: 0.3s;
+        transform: scale(0);
+        
+      }
+      &:hover{
+        transform: translateX(30px);
+        .fa{
+          margin-right:0em;
+          transform: scale(1);          
+        }
+      }
+    }
+    
+  }
+}
