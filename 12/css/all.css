@@ -15,9 +15,38 @@ body {
 }
 
 .side input {
+  color: burlywood;
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid #c9c9c9;
+}
+
+.side input::-webkit-input-placeholder {
+  color: burlywood;
+}
+
+.side input:-ms-input-placeholder {
+  color: burlywood;
+}
+
+.side input::-ms-input-placeholder {
+  color: burlywood;
+}
+
+.side input::placeholder {
+  color: burlywood;
+}
+
+.side input:focus {
+  border: 1px solid bisque;
+  outline: none;
+}
+
+.side button {
+  color: #fff;
+  border: 0;
+  background-color: transparent;
+  margin-left: -40px;
 }
 
 .side li {
@@ -30,26 +59,25 @@ body {
 
 .side li a {
   color: white;
-  display: block;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  margin-left: -20px;
 }
 
-.side li a .fa {
+.side li .fa {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
 
-.side li a:hover {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
+.side li:hover a {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
 }
 
-.side li a:hover .fa {
-  margin-right: 0em;
+.side li:hover .fa {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
