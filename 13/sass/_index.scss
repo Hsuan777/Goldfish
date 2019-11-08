@@ -1,0 +1,81 @@
+.side{
+  position: relative;
+  margin-left: -300px;
+  transition: 0.3s;
+  width: 300px;
+  height: 100vh;
+  background-image:linear-gradient(to right, #8a2387, #e94057, #f27121); ;
+  box-shadow: #f27121 ;
+  input{
+    color: burlywood;
+    background-color:transparent ;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    &::placeholder{
+      color: burlywood;
+    }
+    &:focus{
+      border:1px solid bisque;
+      outline: none;
+    }
+  }
+  button{
+    color: #fff;
+    border: 0;
+    background-color: transparent;
+    margin-left: -40px;
+  }
+  li{
+    color: white;
+    + li{
+      border-top: 1px solid rgb(201, 201, 201);
+    }
+    a{
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-left: -20px;
+    }
+    .fa{
+      transition: 0.3s;
+      transform: scale(0);
+    }
+    &:hover{
+      a{
+        transform: translateX(20px);
+      }
+      .fa{
+        transform: scale(1);          
+      }
+    }
+  }
+  
+  .side__switch{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    border-radius:0 10px 10px 0;
+    top: 45%;
+    right: -40px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    .fa{
+      transition:0.2s ;
+    }
+    
+  }
+}
+#side__switch{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  &:checked{
+  + .side{
+    transform: translateX(300px);
+  }
+  + .side label .fa{
+    //水平翻轉
+    transform: scaleX(-1);
+   }
+ }
+}
