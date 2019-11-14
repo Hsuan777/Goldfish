@@ -1,0 +1,107 @@
+.side{
+  position: relative;
+  margin-left: -300px;
+  transition: 0.3s;
+  width: 300px;
+  height: 100vh;
+  background-image:linear-gradient(to right, #8a2387, #e94057, #f27121); ;
+  input{
+    color: burlywood;
+    background-color:transparent ;
+    border-radius: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    &::placeholder{
+      color: burlywood;
+    }
+    &:focus{
+      border:1px solid bisque;
+      outline: none;
+    }
+  }
+  button{
+    color: #fff;
+    border: 0;
+    background-color: transparent;
+    margin-left: -40px;
+  }
+  li{
+    position: relative;
+    color: white;
+    a{
+      display: block;
+      position: relative;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+      
+    }
+    + li{
+        > a{
+          &::before{
+            position: absolute;
+            content:"";
+            top: -5px;
+            left: 2px;
+            right: 2px;
+            border-top: 1px solid rgb(201, 201, 201);
+          }
+        }
+    }
+    .fa{
+      margin-right: -1.1em;
+      transition: 0.3s;
+      transform: scale(0);
+    }
+    &:hover{
+      .fa{
+        margin-right: 0em;
+        transform: scale(1);          
+      }
+      > .menu__son{
+        // opacity: 0;
+        display: block;
+      }
+    }
+  }
+  .menu__son{
+    position: absolute;
+    width: 300px;
+    left: 100%;
+    // right: -100%;
+    top: 15px;
+    background-color: gray;
+    // opacity: 0;
+    display: none;
+    z-index:999;
+    box-shadow: 5px  5px 10px hsla(240, 40%, 15%,.6);
+  }
+  
+  .side__switch{
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    border-radius:0 10px 10px 0;
+    top: 45%;
+    right: -40px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    .fa{
+      transition:0.2s ;
+    }
+    
+  }
+}
+#side__switch{
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  &:checked{
+  + .side{
+    transform: translateX(300px);
+  }
+  + .side label .fa{
+    //水平翻轉
+    transform: scaleX(-1);
+   }
+ }
+}
