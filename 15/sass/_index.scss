@@ -1,0 +1,35 @@
+.list{
+  li{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    font-size: 26px;
+    color:white ;
+    border-radius: 50%;
+    border: 5px solid white ;
+    background-image:linear-gradient(to right, #11998e, #38ef7d); ;
+    + li{
+      &::before{
+        position: absolute;
+        content:"";
+        top: 50%;
+        left: -55px;
+        width:55px ;
+        height: 10px;
+        border:2px solid white;
+        background-color: #11998e;
+        z-index: -1;
+      }
+    }
+    &.active{
+      ~ li{
+        background-image:linear-gradient(#999) ;
+        &::before{
+          background-color: #999;
+        }
+      }
+    }
+  }
+  
+
+}
