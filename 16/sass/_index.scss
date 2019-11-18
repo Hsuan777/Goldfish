@@ -1,0 +1,15 @@
+body{
+  height: 100vh;
+  background-image: url("https://picsum.photos/1920/1080/?blur") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.login{
+  width: 650px;
+  padding: 80px;
+  background-color: rgba(0,0, 0, 0.3);
+  border:10px solid white;
+  box-shadow: 0px 0px 8px black;
+}
