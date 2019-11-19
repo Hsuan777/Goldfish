@@ -1,0 +1,169 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #546377;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline a {
+  display: block;
+  text-decoration: none;
+}
+
+.timeline h4 {
+  color: black;
+}
+
+.timeline p {
+  color: gray;
+}
+
+.timeline li {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  background-color: ghostwhite;
+}
+
+.timeline li:hover {
+  background-color: goldenrod;
+}
+
+.timeline li:nth-child(2n-1)::before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  right: -165px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.timeline li:nth-child(2n-1)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -165px;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+  z-index: -1;
+}
+
+.timeline li:nth-child(2n)::before {
+  position: absolute;
+  content: "";
+  top: 40%;
+  left: -165px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.timeline li:nth-child(2n)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -165px;
+  width: 300px;
+  height: 1px;
+  background-color: white;
+  z-index: -1;
+}
+
+.timeline::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.timeline2 {
+  position: relative;
+}
+
+.timeline2 a {
+  position: relative;
+  padding: 30px 50px;
+  border-radius: 10px;
+  background-color: ghostwhite;
+  text-decoration: none;
+}
+
+.timeline2 a:hover {
+  background-color: goldenrod;
+}
+
+.timeline2 a:nth-child(odd) {
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
+}
+
+.timeline2 a:nth-child(odd)::before {
+  position: absolute;
+  content: "";
+  top: 42%;
+  right: -87px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.timeline2 a:nth-child(odd)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -87px;
+  width: 87px;
+  height: 1px;
+  background-color: white;
+  z-index: -1;
+}
+
+.timeline2 a:nth-child(even) {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+.timeline2 a:nth-child(even)::before {
+  position: absolute;
+  content: "";
+  top: 42%;
+  left: -87px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.timeline2 a:nth-child(even)::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -87px;
+  width: 87px;
+  height: 1px;
+  background-color: white;
+  z-index: -1;
+}
+
+.timeline2::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+}
+/*# sourceMappingURL=all.css.map */

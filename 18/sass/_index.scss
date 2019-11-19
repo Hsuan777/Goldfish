@@ -1,0 +1,145 @@
+.timeline{
+  position: relative;
+  a{
+    display: block;
+    text-decoration: none;
+  }
+  h4{
+    color: black; 
+  }
+  p{
+    color: gray;
+  }
+  li{
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    &:hover{
+      background-color: goldenrod;
+    }
+    &:nth-child(2n-1){
+      &::before{
+        position: absolute;
+        content: "";
+        top: 40%;
+        right: -165px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -165px;
+        width: 300px;
+        height: 1px;
+        background-color: white;
+        z-index: -1;
+      }
+    }
+    &:nth-child(2n){
+      &::before{
+        position: absolute;
+        content: "";
+        top: 40%;
+        left: -165px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -165px;
+        width: 300px;
+        height: 1px;
+        background-color: white;
+        z-index: -1;
+
+      }
+    }
+  } 
+  &::after{
+    position: absolute;
+    content:"";
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    transform: rotate(-15deg) ;
+  }
+}
+
+.timeline2{
+  position: relative;
+  a{
+    position: relative;
+    padding:30px 50px;
+    border-radius: 10px;
+    background-color: ghostwhite;
+    text-decoration: none;
+    &:hover{
+      background-color: goldenrod;
+    }
+    &:nth-child(odd){
+      transform: translateX(-200px);
+      &::before{
+        position: absolute;
+        content: "";
+        top: 42%;
+        right: -87px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -87px;
+        width: 87px;
+        height: 1px;
+        background-color: white;
+        z-index: -1;
+      }
+    }
+    &:nth-child(even){
+      transform: translateX(200px);
+      &::before{
+        position: absolute;
+        content: "";
+        top: 42%;
+        left: -87px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        }
+      &::after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: -87px;
+        width: 87px;
+        height: 1px;
+        background-color: white;
+        z-index: -1;
+
+      }
+    }
+  }
+  &::after{
+      position: absolute;
+      content:"";
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      background-color: white;
+  }
+}
