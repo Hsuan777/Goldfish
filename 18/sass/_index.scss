@@ -4,12 +4,18 @@
   a{
     position: relative;
     display: block;
-    padding:30px 50px;
+    width: 300px;
+    padding:15px;
     border-radius: 10px;
     background-color: ghostwhite;
     text-decoration: none;
     z-index: 99;
-    
+    h4{
+      color: black;
+    }
+    p,li{
+      color: #666;
+    }
     &:hover{
       background-color: goldenrod;
     }
@@ -18,8 +24,8 @@
       &::before{
         position: absolute;
         content: "";
-        top: 42%;
-        right: -89px;
+        top: 50px;
+        right: -60px;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -28,21 +34,21 @@
       &::after{
         position: absolute;
         content: "";
-        top: 50%;
-        right: -87px;
-        width: 87px;
+        top: 60px;
+        right: -50px;
+        width: 50px;
         height: 1px;
         background-color: white;
       }
     }
     &:nth-child(even){
       transform: translate(200px,-35%);
-      margin-bottom:-100px;
+      margin-bottom:-80px;
       &::before{
         position: absolute;
         content: "";
-        top: 42%;
-        left: -87px;
+        top: 50px;
+        left: -60px;
         width: 20px;
         height: 20px;
         border-radius: 50%;
@@ -51,9 +57,9 @@
       &::after{
         position: absolute;
         content: "";
-        top: 50%;
-        left: -87px;
-        width: 87px;
+        top: 60px;
+        left: -50px;
+        width: 50px;
         height: 1px;
         background-color: white;
        
