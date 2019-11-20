@@ -7,74 +7,75 @@ body {
 
 .timeline {
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .timeline a {
-  display: block;
-  text-decoration: none;
-}
-
-.timeline h4 {
-  color: black;
-}
-
-.timeline p {
-  color: gray;
-}
-
-.timeline li {
   position: relative;
-  width: 300px;
+  display: block;
+  padding: 30px 50px;
   border-radius: 10px;
   background-color: ghostwhite;
+  text-decoration: none;
+  z-index: 99;
 }
 
-.timeline li:hover {
+.timeline a:hover {
   background-color: goldenrod;
 }
 
-.timeline li:nth-child(2n-1)::before {
+.timeline a:nth-child(odd) {
+  -webkit-transform: translate(-200px, 0);
+          transform: translate(-200px, 0);
+}
+
+.timeline a:nth-child(odd)::before {
   position: absolute;
   content: "";
-  top: 40%;
-  right: -165px;
+  top: 42%;
+  right: -89px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: white;
 }
 
-.timeline li:nth-child(2n-1)::after {
+.timeline a:nth-child(odd)::after {
   position: absolute;
   content: "";
   top: 50%;
-  right: -165px;
-  width: 300px;
+  right: -87px;
+  width: 87px;
   height: 1px;
   background-color: white;
-  z-index: -1;
 }
 
-.timeline li:nth-child(2n)::before {
+.timeline a:nth-child(even) {
+  -webkit-transform: translate(200px, -35%);
+          transform: translate(200px, -35%);
+  margin-bottom: -100px;
+}
+
+.timeline a:nth-child(even)::before {
   position: absolute;
   content: "";
-  top: 40%;
-  left: -165px;
+  top: 42%;
+  left: -87px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: white;
 }
 
-.timeline li:nth-child(2n)::after {
+.timeline a:nth-child(even)::after {
   position: absolute;
   content: "";
   top: 50%;
-  left: -165px;
-  width: 300px;
+  left: -87px;
+  width: 87px;
   height: 1px;
   background-color: white;
-  z-index: -1;
 }
 
 .timeline::after {
@@ -84,8 +85,6 @@ body {
   top: 0;
   bottom: 0;
   background-color: white;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg);
 }
 
 .timeline2 {
@@ -93,66 +92,68 @@ body {
 }
 
 .timeline2 a {
-  position: relative;
-  padding: 30px 50px;
-  border-radius: 10px;
-  background-color: ghostwhite;
+  display: block;
   text-decoration: none;
 }
 
-.timeline2 a:hover {
+.timeline2 h4 {
+  color: black;
+}
+
+.timeline2 p {
+  color: gray;
+}
+
+.timeline2 li {
+  position: relative;
+  width: 300px;
+  border-radius: 10px;
+  background-color: ghostwhite;
+}
+
+.timeline2 li:hover {
   background-color: goldenrod;
 }
 
-.timeline2 a:nth-child(odd) {
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
-}
-
-.timeline2 a:nth-child(odd)::before {
+.timeline2 li:nth-child(2n-1)::before {
   position: absolute;
   content: "";
-  top: 42%;
-  right: -87px;
+  top: 40%;
+  right: -165px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: white;
 }
 
-.timeline2 a:nth-child(odd)::after {
+.timeline2 li:nth-child(2n-1)::after {
   position: absolute;
   content: "";
   top: 50%;
-  right: -87px;
-  width: 87px;
+  right: -165px;
+  width: 300px;
   height: 1px;
   background-color: white;
   z-index: -1;
 }
 
-.timeline2 a:nth-child(even) {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
-}
-
-.timeline2 a:nth-child(even)::before {
+.timeline2 li:nth-child(2n)::before {
   position: absolute;
   content: "";
-  top: 42%;
-  left: -87px;
+  top: 40%;
+  left: -165px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background-color: white;
 }
 
-.timeline2 a:nth-child(even)::after {
+.timeline2 li:nth-child(2n)::after {
   position: absolute;
   content: "";
   top: 50%;
-  left: -87px;
-  width: 87px;
+  left: -165px;
+  width: 300px;
   height: 1px;
   background-color: white;
   z-index: -1;
@@ -165,5 +166,7 @@ body {
   top: 0;
   bottom: 0;
   background-color: white;
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
 }
 /*# sourceMappingURL=all.css.map */
