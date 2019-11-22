@@ -1,0 +1,22 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.title {
+  background-color: goldenrod;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  top: 50px;
+  right: 15px;
+  background-color: black;
+}
+/*# sourceMappingURL=all.css.map */

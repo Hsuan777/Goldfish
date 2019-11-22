@@ -1,0 +1,14 @@
+
+.title{
+  background-color: goldenrod;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    top: 50px;
+    right: 15px;
+    background-color: black;
+  }
+}
