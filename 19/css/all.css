@@ -13,6 +13,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   font-size: 26px;
+  color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +70,7 @@ body {
 }
 
 .box:hover {
-  color: white;
+  color: gold;
   font-size: 46px;
 }
 
@@ -77,6 +78,8 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   border-radius: 30px;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
 }
 
 .box:hover::after {
@@ -132,5 +135,19 @@ body {
 
 .box12::before {
   background-color: #2fccf9;
+}
+
+.pic {
+  background-image: url("https://picsum.photos/1200/900?random=22");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  z-index: 0;
+}
+
+.pic_filter::before {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 99;
 }
 /*# sourceMappingURL=all.css.map */

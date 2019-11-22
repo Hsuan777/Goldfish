@@ -4,6 +4,7 @@
   height: 180px;
   flex-shrink: 0;
   font-size: 26px;
+  color: transparent;
   // outline: 1px solid blue;
   display: flex;
   justify-content: center;
@@ -16,7 +17,6 @@
     content:"";
     width: 180px;
     height: 180px;
-    
     top: 0;
     left: 0;
     // border: 1px solid red;
@@ -44,16 +44,18 @@
     transform: translate(0px,-50px);
   }
   &:hover{
-    color: white;
+    color: gold;
     font-size: 46px;
     &::before{
       transform:rotate(90deg); 
       border-radius: 30px;
+      backdrop-filter: blur(0px);
     }
     &::after{
       opacity: 1;
       border-radius: 30px;
       transform: scale(1);
+      
     }
   }
 }
@@ -69,3 +71,18 @@
 .box10::before{ background-color: #b2e086; }
 .box11::before{ background-color: #ef8899; }
 .box12::before{ background-color: #2fccf9; }
+
+.pic{
+  background-image: url("https://picsum.photos/1200/900?random=22");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  z-index: 0;
+}
+.pic_filter{
+  &::before{
+    backdrop-filter: blur(5px);
+    z-index: 99;
+  }
+
+}
