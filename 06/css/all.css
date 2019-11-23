@@ -1,24 +1,2 @@
-body {
-  font-size: 16px;
-  color: white;
-  background-color: black;
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-main {
-  min-height: 50vh;
-}
-
-footer h4 {
-  border-bottom: 1px dotted white;
-  line-height: 2;
-}
-
-a.nav-link {
-  color: white;
-}
-
-a.nav-link:hover {
-  color: orange;
-}
+body{font-size:16px;color:#fff;background-color:#000;font-family:"Noto Sans TC",sans-serif}main{min-height:50vh}footer h4{border-bottom:1px dotted white;line-height:2}a.nav-link{color:white}a.nav-link:hover{color:orange}
 /*# sourceMappingURL=all.css.map */

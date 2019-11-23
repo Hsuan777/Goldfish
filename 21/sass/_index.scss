@@ -5,10 +5,73 @@
   &::after{
     position: absolute;
     content: "";
-    width: 100px;
+    width: 0px;
     height: 2px;
-    top: 50px;
-    right: 15px;
+    top: 60px;
+    right:15px;
     background-color: black;
+    transition: 0.3s;
+  }
+  &:hover{
+    &::after{
+      width:150px;
+    }
+  }
+}
+.title2{
+  border-right: 5px solid black;
+}
+
+.title3{
+  position: relative;
+  color: #666;
+  font-size: 80px;
+  letter-spacing: 0.4em;
+  &:after{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 70px;
+    background-color: #EEE;
+    top: 40px;
+    left: 0;
+    z-index: -1;
+  }
+}
+.text-en{
+  position: absolute;
+  font-size: 50px;
+  letter-spacing: 0em;
+  transform: rotate(45deg);
+  top: 200%;
+  left: 0;
+  color: #999;
+  &:after{
+    width: 100%;
+    top:25px;
+    height: 35px;
+  }
+}
+.text-en2{
+  position: absolute;
+  font-size: 50px;
+  letter-spacing: 0em;
+  transform: rotate(45deg);
+  top: 200%;
+  right: 0;
+  color: #999;
+  z-index: 99;
+  &:after{
+    width: 100%;
+    top:25px;
+    height: 35px;
+  }
+}
+p{
+  &:first-letter{
+    font-size: 40px;
+    float: left;
+    line-height: 1.2;
+    padding-right: 5px;
   }
 }
