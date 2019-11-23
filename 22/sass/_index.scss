@@ -1,0 +1,72 @@
+
+.title{
+  font-size: 80px;
+  background-color: #EEE;
+  position: relative;
+  &::after{
+    position: absolute;
+    content:"CSS COKE IS AWESOME";
+    bottom: 0;
+    right:0  ;
+    color: #666;
+    font-size: 20px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  &:hover{
+    &::after{
+    opacity: 1;
+    }
+  }
+}
+.title2{
+  font-size: 80px;
+  position: relative; 
+  color: #666;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 30px solid #EEE;
+    top: 20px;
+    left:0px;
+    z-index: -2;
+  }
+}
+.title3{
+  font-size: 80px;
+  position: relative; 
+  color: #666;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 150px;
+    // border: 30px solid #EEE;
+    top: 55px;
+    left:-10px;
+    z-index: -2;
+    transform: rotate(35deg);
+    background-color: goldenrod;
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 30px solid #EEE;
+    top: 20px;
+    left:0px;
+    z-index: -2;
+    transform: rotate(20deg);
+  }
+}
+p{
+  &:first-letter{
+    font-size: 40px;
+    float: left;
+    line-height: 1.2;
+    padding-right: 5px;
+  }
+}
