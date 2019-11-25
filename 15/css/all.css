@@ -1,2 +1,40 @@
-body{font-size:16px;color:#000;background-color:#546377;font-family:"Noto Sans TC",sans-serif}.list li{position:relative;width:150px;height:150px;font-size:26px;color:white;border-radius:50%;border:5px solid white;background-image:-webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));background-image:linear-gradient(to right, #11998e, #38ef7d)}.list li+li::before{position:absolute;content:"";top:50%;left:-55px;width:55px;height:10px;border:2px solid white;background-color:#11998e;z-index:-1}.list li.active ~ li{background-image:-webkit-gradient(linear, left top, left bottom, from(#999));background-image:linear-gradient(#999)}.list li.active ~ li::before{background-color:#999}
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #546377;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.list li {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  font-size: 26px;
+  color: white;
+  border-radius: 50%;
+  border: 5px solid white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#11998e), to(#38ef7d));
+  background-image: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.list li + li::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -55px;
+  width: 55px;
+  height: 10px;
+  border: 2px solid white;
+  background-color: #11998e;
+  z-index: -1;
+}
+
+.list li.active ~ li {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#999));
+  background-image: linear-gradient(#999);
+}
+
+.list li.active ~ li::before {
+  background-color: #999;
+}
 /*# sourceMappingURL=all.css.map */

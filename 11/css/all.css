@@ -1,2 +1,10 @@
-body{font-size:16px;color:gold;background-color:#000;background-image:-webkit-gradient(linear, left top, left bottom, from(#eb9e58), color-stop(#fd927d), color-stop(#fa90a5), color-stop(#e597c7), color-stop(#c4a3dc), color-stop(#afaee3), color-stop(#9fb6e3), color-stop(#98bddd), color-stop(#a0c5d9), color-stop(#aeccd6), color-stop(#bed1d5), to(#cfd6d6));background-image:linear-gradient(to bottom, #eb9e58, #fd927d, #fa90a5, #e597c7, #c4a3dc, #afaee3, #9fb6e3, #98bddd, #a0c5d9, #aeccd6, #bed1d5, #cfd6d6);font-family:"Noto Sans TC",sans-serif;height:100vh}
+body {
+  font-size: 16px;
+  color: gold;
+  background-color: black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eb9e58), color-stop(#fd927d), color-stop(#fa90a5), color-stop(#e597c7), color-stop(#c4a3dc), color-stop(#afaee3), color-stop(#9fb6e3), color-stop(#98bddd), color-stop(#a0c5d9), color-stop(#aeccd6), color-stop(#bed1d5), to(#cfd6d6));
+  background-image: linear-gradient(to bottom, #eb9e58, #fd927d, #fa90a5, #e597c7, #c4a3dc, #afaee3, #9fb6e3, #98bddd, #a0c5d9, #aeccd6, #bed1d5, #cfd6d6);
+  font-family: "Noto Sans TC", sans-serif;
+  height: 100vh;
+}
 /*# sourceMappingURL=all.css.map */

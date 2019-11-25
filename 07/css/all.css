@@ -1,2 +1,106 @@
-body{font-size:16px;color:#000;background-color:#000;font-family:"Noto Sans TC",sans-serif}nav{position:relative}nav ul{list-style-type:none}nav ul li{position:relative;-webkit-transition:0.3s;transition:0.3s}nav ul li::after{content:"";position:absolute;height:0px;right:50%;left:50%;bottom:-5px;border-bottom:1px solid black;-webkit-transition:0.3s;transition:0.3s}nav ul li:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px)}nav ul li:hover::after{right:0%;left:0%;-webkit-transform:translateY(-2px);transform:translateY(-2px)}nav .logo{position:absolute;left:5%}nav .logo2{position:absolute;left:49.5%}nav .logo3{position:absolute;left:47.7%}@media (max-width: 768px){nav .logo3{position:unset}}nav a:nth-child(3){margin-left:0px}@media (max-width: 768px){nav a:nth-child(3){margin-left:0px}}nav a.nav-item{position:relative;-webkit-transition:0.3s;transition:0.3s}nav a.nav-item::after{content:"";position:absolute;height:0px;right:50%;left:50%;bottom:-5px;border-bottom:1px solid black;-webkit-transition:0.3s;transition:0.3s}nav a.nav-item:hover{-webkit-transform:translateY(-5px);transform:translateY(-5px)}nav a.nav-item:hover::after{right:10%;left:10%;-webkit-transform:translateY(-8px);transform:translateY(-8px)}
+body {
+  font-size: 16px;
+  color: black;
+  background-color: black;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;
+  border-bottom: 1px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+nav ul li:hover::after {
+  right: 0%;
+  left: 0%;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+nav .logo {
+  position: absolute;
+  left: 5%;
+}
+
+nav .logo2 {
+  position: absolute;
+  left: 49.5%;
+}
+
+nav .logo3 {
+  position: absolute;
+  left: 47.7%;
+}
+
+@media (max-width: 768px) {
+  nav .logo3 {
+    position: unset;
+  }
+}
+
+nav a:nth-child(3) {
+  margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+  nav a:nth-child(3) {
+    margin-left: 0px;
+  }
+}
+
+nav a.nav-item {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a.nav-item::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  right: 50%;
+  left: 50%;
+  bottom: -5px;
+  border-bottom: 1px solid black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a.nav-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+nav a.nav-item:hover::after {
+  right: 10%;
+  left: 10%;
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
 /*# sourceMappingURL=all.css.map */

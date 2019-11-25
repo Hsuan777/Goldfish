@@ -1,2 +1,85 @@
-body{font-size:16px;color:#000;background-color:#fff;font-family:"Noto Sans TC",sans-serif}.txt{position:relative;width:1100px;height:600px;-webkit-box-shadow:0px 0px 5px #999;box-shadow:0px 0px 5px #999}.txt::before{position:absolute;content:"CSS COKE IS AWESOME";width:100%;top:10px;left:10px;font-size:200px;line-height:0.9;color:#EEE;z-index:-1}.txt::after{position:absolute;content:"CSS COKE IS AWESOME";width:100%;top:0px;left:0px;font-size:200px;color:whitesmoke;line-height:0.9;z-index:-1}.title2{position:relative;letter-spacing:0.8em}.title2::before{position:absolute;content:"";width:150px;height:5px;bottom:-5px;left:43%;background-color:#999}.title2::after{position:absolute;content:"";width:150px;height:5px;top:0;left:43%;background-color:#999}.title3{position:relative;letter-spacing:0.1em;font-size:100px}.title3::before{position:absolute;content:"";width:100px;height:5px;bottom:45%;right:0;background-color:#999}.title3::after{position:absolute;content:"";width:100px;height:5px;bottom:45%;left:0;background-color:#999}
+body {
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.txt {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  line-height: 1.8;
+}
+
+.txt::first-letter {
+  font-size: 40px;
+  float: left;
+  line-height: 1.2;
+  padding-right: 10px;
+}
+
+.txt::before {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  border: 35px solid gold;
+  top: 15%;
+  left: 25%;
+  z-index: -1;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.txt::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 300px;
+  border: 35px solid goldenrod;
+  top: 20%;
+  left: 25%;
+  z-index: -1;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.txt_2::before {
+  position: absolute;
+  content: "";
+  width: 290px;
+  height: 290px;
+  border: 35px solid gold;
+  top: 25%;
+  left: 25%;
+  z-index: -1;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+
+.txt_2::after {
+  position: absolute;
+  content: "";
+  width: 290px;
+  height: 290px;
+  border: 35px solid goldenrod;
+  top: 30%;
+  left: 25%;
+  z-index: -1;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.title {
+  font-size: 40px;
+  color: #aaa;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  top: 20%;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
 /*# sourceMappingURL=all.css.map */
