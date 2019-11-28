@@ -1,0 +1,35 @@
+
+.navbar{
+  display: flex;  
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+  box-shadow: 0px 0px 10px #6c5b7b;
+  a{
+    text-decoration: none;
+    color: goldenrod;
+  }
+}
+.banner__pic{
+  min-height: 450px;
+  padding:0 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: 
+  linear-gradient(-120deg, #355c7d, #6c5b7b, transparent 80%),
+  url("https://picsum.photos/1200/600?random=11");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  .txt{
+    color: rgba(255, 217, 0, 0.685);
+    p{
+      padding-bottom: 10px;
+      border-bottom:1px solid gold ;
+    }
+    h2{
+      padding-top: 10px;
+    }
+  }
+}
