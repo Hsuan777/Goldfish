@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: black;
-  background-color: white;
+  background-color: #EEE;
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -19,6 +19,32 @@ body {
 .container-fluid {
   width: 1200px;
   margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: 30px 0;
+  position: relative;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: #AAA;
+  top: 50%;
+  left: 65%;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 2px;
+  background-color: #AAA;
+  top: 50%;
+  right: 65%;
 }
 
 .navbar {
@@ -41,34 +67,84 @@ body {
   color: goldenrod;
 }
 
-.banner__pic {
+.banner {
   min-height: 450px;
-  padding: 0 60px;
+  padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: linear-gradient(-120deg, #355c7d, #6c5b7b, transparent 80%), url("https://picsum.photos/1200/600?random=11");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s;
+  transition: background-position 0.3s;
 }
 
-.banner__pic .txt {
+.banner:hover {
+  background-position: 900px, center bottom;
+  font-size: 0;
+}
+
+.banner .text-grounp {
   color: rgba(255, 217, 0, 0.685);
 }
 
-.banner__pic .txt p {
-  padding-bottom: 10px;
-  border-bottom: 1px solid gold;
+.banner .text-grounp + .text-grounp {
+  margin-top: 10px;
+  border-top: 1px solid gold;
 }
 
-.banner__pic .txt h2 {
-  padding-top: 10px;
+.banner2 {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner2 .text-grounp {
+  position: relative;
+  padding: 50px 20px;
+  border: 5px solid #c06c84;
+  margin-right: 20px;
+}
+
+.banner2 .text-grounp h3 {
+  text-align: center;
+}
+
+.banner2 .text-grounp::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #EEE;
+  border-radius: 50%;
+  border-top: 5px solid #c06c84;
+  border-left: 5px solid #c06c84;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -55px;
+  left: 32%;
+  z-index: 99;
 }
 /*# sourceMappingURL=all.css.map */
