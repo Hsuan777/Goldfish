@@ -20,4 +20,11 @@ body{
   margin: 0 auto;
 }
 
-
+.d-flex{
+  display: flex;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height:auto ;
+}
