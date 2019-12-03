@@ -1,0 +1,28 @@
+@mixin hidden_text($width,$height,$bg_url){
+	width: $width;
+	height: $height;
+	text-indent: 101%;
+  	overflow: hidden;
+ 	white-space: nowrap;
+ 	background-image:$bg_url;
+ 	background-repeat: no-repeat; 
+}
+
+
+//@media
+@mixin iPad{
+	@media (max-width: 768px) {
+		@content
+	}
+}
+@mixin iPhone_Plus{
+	@media (max-width: 414px) {
+		@content
+	}
+}
+
+@mixin iPhone5{
+	@media (max-width: 320px) {
+		@content		
+	}
+}
