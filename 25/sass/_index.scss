@@ -151,8 +151,8 @@
     color: gold;
     .text-grounp{
       &::before{
-        border-left: 149px solid #6c5b7b;
-        border-right: 149px solid #6c5b7b;
+        border-left: 149px solid transparent;
+        border-right: 149px solid transparent;
       }
     }
     h3{
@@ -188,6 +188,5 @@
     .serch{
       margin-top: 35px;
     }
-
   }
 }

@@ -272,8 +272,8 @@ footer {
 }
 
 .studio__member:hover .text-grounp::before {
-  border-left: 149px solid #6c5b7b;
-  border-right: 149px solid #6c5b7b;
+  border-left: 149px solid transparent;
+  border-right: 149px solid transparent;
 }
 
 .studio__member:hover h3::after {
