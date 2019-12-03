@@ -8,16 +8,6 @@
  	background-repeat: no-repeat; 
 }
 
-@mixin border_radius_content($size){
-	width:$size ;
-	height: $size;
-	font-size:$size/4 ;
-	padding-top:$size/2.8;
-	text-align: center;
-	background-color: white;
-	border: 2px solid black;
-	border-radius: 50%;
-}
 
 //@media
 @mixin iPad{
